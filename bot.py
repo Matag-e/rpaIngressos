@@ -45,29 +45,37 @@ def main():
     #    not_found("PSJ")
      
          
-         
+        
             
      
          
          
 
     while True:
-        if bot.find("NQA", threshold=230, waiting_time=1000):
-            if bot.find_text("norte", threshold=230, waiting_time=1000):
+        if bot.find_text( "fazendinha", threshold=230, waiting_time=1000):
+            if bot.find_text( "norte", threshold=230, waiting_time=1000):
                 bot.click()  # Clique em "NORTE"
-            if bot.find_text("rosangela", threshold=230, waiting_time=10000):
+            if bot.find_text( "talita", threshold=230, waiting_time=10000):
                 bot.click()  # Clique em "ROSANGELA"
-                if bot.find_text("caio", threshold=230, waiting_time=10000):
+                if bot.find_text( "regiane", threshold=230, waiting_time=10000):
                     bot.click()  # Clique em "CAIO"
-                    if bot.find_text("anab", threshold=230, waiting_time=10000):
+                    if bot.find_text( "maylon", threshold=230, waiting_time=10000):
                         bot.click()  # Clique em "ANAB"
-                        if bot.find_text("caiol", threshold=230, waiting_time=10000):
+                        if bot.find_text( "kyara", threshold=230, waiting_time=10000):
                             bot.click()  # Clique em "CAIOL"
-                            if bot.find_text("continuar", threshold=230, waiting_time=10000):
-                                bot.click()  # Clique em "continuar"
-                                break
+                            if bot.find_text( "murilo", threshold=230, waiting_time=10000):
+                                bot.click()  # Clique em "TESTE"
+                                if bot.find_text( "rhaje", threshold=230, waiting_time=10000):
+                                    bot.click()  # Clique em "TESTE1"
+                                    if bot.find_text( "continuar", threshold=230, waiting_time=10000):
+                                        bot.click()  # Clique em "continuar"
+                                        break
+                                    else:
+                                        bot.key_f5()  # Atualiza a página se "continuar" não for encontrado
+                                else:
+                                    bot.key_f5()  # Atualiza a página se "teste1" não for encontrado
                             else:
-                                bot.key_f5()  # Atualiza a página se "continuar" não for encontrado
+                                bot.key_f5()  # Atualiza a página se "teste" não for encontrado
                         else:
                             bot.key_f5()  # Atualiza a página se "caiol" não for encontrado
                     else:
@@ -77,10 +85,11 @@ def main():
             else:
                 bot.key_f5()  # Atualiza a página se "rosangela" não for encontrado
         else:
-            bot.key_f5()  # Atualiza a página se "norte" não for encontrado
-    else:
-        bot.key_f5()  # Atualiza a página se "parque" não for encontrado
+            bot.key_f5()  # Atualiza a página se "norte" não for encontrado 
+    
    
+
+
 
 
 
