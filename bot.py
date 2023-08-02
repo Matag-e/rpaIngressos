@@ -52,6 +52,7 @@ def main():
          
 
     while True:
+        bot.page_down()
         if bot.find_text( "fazendinha", threshold=230, waiting_time=1000):
             if bot.find_text( "norte", threshold=230, waiting_time=1000):
                 bot.click()  # Clique em "NORTE"
